@@ -29,6 +29,31 @@ body {
       border-radius: 20px;
       height: 100%;
     }
+
+    .sky {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media @phone {
+        display:none;
+      }
+    }
+
+    .blast {
+      @media @phone {
+        width: 100%;
+      }
+    }
+
+  }
+
+  .header-img {
+    @media @phone {
+      width: 100%;
+    }
   }
 
   .visit-planets {
@@ -49,7 +74,7 @@ body {
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+}
     .walk-text {
       width: 50%;
 
@@ -62,17 +87,19 @@ body {
       }
 
       .btn {
-        .singup-btn (100px, 50px);
+      }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        }
       }
     }
   }
