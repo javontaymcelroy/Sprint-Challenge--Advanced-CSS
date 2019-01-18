@@ -359,3 +359,49 @@ body {
   height: auto;
   border-radius: 10px;
 }
+.blog-container {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .blog-container {
+    width: 95%;
+  }
+}
+.blog-header {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-image: url(https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
+  background-position: center;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+.blog-posts {
+  display: flex;
+  flex-direction: column;
+}
+.blog-posts .posts {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-bottom: 1.5px solid #23293B;
+}
+.blog-posts a {
+  text-decoration: none;
+  color: #23293B;
+}
+.blog-posts p {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+.blog-posts h5 {
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+@media (max-width: 500px) {
+  .blog-posts h2 {
+    font-size: 1.8rem;
+  }
+}

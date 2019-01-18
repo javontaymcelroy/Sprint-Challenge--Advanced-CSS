@@ -1,0 +1,48 @@
+.blog-container {
+    width: 50%;
+    margin: 0 auto;
+    @media @phone {
+        width: 95%;
+    }
+}
+
+.blog-header {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-image: url(https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
+    background-position: center; 
+    text-align: center;
+    color: white;
+    .border-radius();
+}
+
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+
+    .posts {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        border-bottom: 1.5px solid @ebony-clay;
+    }
+        a {
+            text-decoration: none;
+            color: @ebony-clay;
+        }
+        
+        p {
+            .padding(10px, 0px);
+        }
+
+        h5 {
+            .padding(5px,0px);
+        }
+
+        h2 {
+            @media @phone {
+                font-size: 1.8rem;
+            }
+        }
+}
