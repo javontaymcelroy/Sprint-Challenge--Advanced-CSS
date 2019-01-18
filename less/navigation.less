@@ -4,6 +4,10 @@ nav {
     margin: 0 auto;
     padding-top: 15px;
     background-color: @wild-sand;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(246, 246, 246, 0.897);
 
 }
 
@@ -19,12 +23,7 @@ nav {
 
 
 .navigation {
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 15px;
-    width: 500px;
-    margin: 0 auto;
-    
+    .company-nav();
     @media @phone {
         width: 370px;
         margin: 0 auto;
@@ -32,7 +31,8 @@ nav {
 }
 
 .navigation a {
-    color: black;
+    color: @ebony-clay;
     text-decoration: none;
     font-family: @river-bend;
+    font-size: 1.5rem;
 }

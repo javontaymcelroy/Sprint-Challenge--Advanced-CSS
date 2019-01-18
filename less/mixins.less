@@ -1,8 +1,36 @@
-.btn (@width, @height) {
+.signup-btn(@width, @height) {
     width: @width;
     height: @height;
-    background-color: #23293B;
-    color: white;
+    background-color: @ebony-clay;
+    color: @wild-sand;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 4%;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: @wild-sand;
+        color: @ebony-clay;
+    }
+    @media @phone {
+        font-size: 1.8rem;
+    }
 }
 
+.company-nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.border-radius {
+    border-radius: 5px;
+}
+
+
+
 @phone: ~"(max-width: 500px)";
+

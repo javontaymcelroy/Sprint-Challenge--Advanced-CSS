@@ -2,6 +2,7 @@
 
 body {
   margin: 0 auto;
+  margin-top: 95px;
 }
 
 .home {
@@ -51,6 +52,7 @@ body {
   }
 
   .header-img {
+    .border-radius();
     @media @phone {
       width: 100%;
     }
@@ -74,9 +76,22 @@ body {
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-}
+
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      padding: 10px 10px;
+      margin: 0 auto;
+    }
+
+  }
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width:100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -84,15 +99,25 @@ body {
 
       p {
         margin-bottom: 26px;
+        }
       }
 
       .btn {
+        .signup-btn(120px, 48px);
+        @media @phone {
+          .signup-btn(350px, 48px);
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 15px;
+      }
 
       
       img {
@@ -101,6 +126,4 @@ body {
         border-radius: 10px;
         }
       }
-    }
-  }
-}// home
+    
